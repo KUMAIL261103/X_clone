@@ -1,6 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.msg:hover,
+.analytic:hover,
+.share:hover,
+.bookmark:hover{
+   color:#1d9bf0;
+   
+}
+.msg,.analytic,.share,.bookmark{
+  color:gray;
+  /* width:1.2rem;
+  height:1.2rem; */
+}
+.retweet{
+  color:gray;
+  /* width: 1.2rem;
+    height: 1.2rem; */
+}
+.retweet:hover{
+  color:rgb(1, 190, 1);
+  box-shadow: rgb(1, 190, 1);
+}
+.like{
+  color:gray;
+  /* width: 1.2rem;
+    height: 1.2rem; */
+}
+.like:hover{
+  color:rgb(255, 50, 50);
+  /* box-shadow: 0px 0px 25px 0.2px rgb(255, 50, 50); */
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
